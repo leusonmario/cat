@@ -21,8 +21,10 @@ jdk:
 
 
 
+
+
 script:
-  - mvn clean cobertura:cobertura -Dtest=3#2 -DfailIfNoTests=false
+  - mvn clean cobertura:cobertura -Dtest=metadata#metadata -DfailIfNoTests=false
 
 before_deploy:
 - tar -zcvf coverage-result.tar.gz /home/travis/build/leusonmario/cat/target/site/cobertura
