@@ -9,6 +9,8 @@ jdk:
 
 
 
+
+
 script:
   - mvn clean cobertura:cobertura -Dtest=failures#failures -DfailIfNoTests=false
 
