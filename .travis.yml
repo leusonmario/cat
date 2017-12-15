@@ -39,8 +39,10 @@ jdk:
 
 
 
+
+
 script:
-  - mvn clean cobertura:cobertura -Dtest=instead#instead -DfailIfNoTests=false
+  - mvn clean cobertura:cobertura -Dtest=descriptors#descriptors -DfailIfNoTests=false
 
 before_deploy:
 - tar -zcvf coverage-result.tar.gz /home/travis/build/leusonmario/cat/target/site/cobertura
